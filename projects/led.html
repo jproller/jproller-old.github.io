@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../styles/m-styles.css">
+    <title>Jake Roller</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="title">
+        <a class="headerLinkNoHover" href="../index.html">Jacob Roller</a>
+      </h1>
+      <div>
+        <ul>
+          <li class="navItem">
+            <a class="headerLink" href="../index.html">Home</a>
+          </li>
+          <li class="navItem">
+            <a class="headerLink" href="../projects.html">Projects</a>
+          </li>
+          <li class="navItem">
+            <a class="headerLink" href="../photos.html">Photos</a>
+          </li>
+          <li class="navItem">
+            <a class="headerLink" href="../about.html">About me</a>
+          </li>
+          <li class="navItem">
+            <a class="headerLink" href="../contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <section class="content">
+        <div class="content-body">
+          <ul style="text-align: center">
+            <li class="projItem">
+              <a href="schlieren.html">Schlieren Imaging</a>
+            </li>
+            <li class="projItem">
+              <a href="led.html">PCB LED Light</a>
+            </li>
+            <li class="projItem">
+              <a href="index.html">test project</a>
+            </li>
+            <li class="projItem">
+              <a href="index.html">test project</a>
+            </li>
+            <li class="projItem">
+              <a href="index.html">test project</a>
+            </li>
+            <li class="projItem">
+              <a href="index.html">test project</a>
+            </li>
+            <li class="projItem">
+              <a href="index.html">test project</a>
+            <li class="projItem">
+              <a href="index.html">test project</a>
+            </li>
+          </ul>
+          <div class="featured-project">
+            <h1 id="content-title">PCB LED Light</h1>
+            <p>
+              A skill I’ve been working on developing recently is developing and assembling printed circuit boards (PCBs) that utilize surface mount components. In December of 2019, I decided to design my first circuit board for manufacture by an economical Chinese PCB prototyping service. The PCB was quite simple, utilizing three through-hole components and two surface mount components in a circuit to control an old computer fan for use as a makeshift soldering fume extractor. That board, however, was extremely simple and meant more of a test of the prototyping process rather than my design skills.
+            </p>
+            <p>
+              So in August 2020, lacking the facilities to do many of the mechanical projects I’d like to do, I decided to open up EAGLE and start designing my next PCB. I knew I wanted it to use only SMD (surface mount) components when possible, at least be more complex than my first board, and also be something that I would actually find useful. The two best ideas I came up with at the time were a mechanical keyboard numpad and an LED light for photography. Looking at the title, I’m sure you can guess which one I went with.
+            </p>
+            <p>
+              While the numpad might have been more useful for me everyday, after looking at the cost of individual switches, keycaps, and all the other specialized components necessary, it would have made more sense to just buy one from a manufacturer who has the benefits of economies of scale. LEDs, on the other hand, have gotten much cheaper over the years and I also couldn’t find a good photo light within my price range. So I made one!
+            </p>
+            <img src="led/media/images/Annotation 2020-09-08 131235.png" alt="First LED board design." style="width:50%;display:block;margin:auto;">
+            <p>
+              The first board I came up with (above) used 48 individual LEDs in series groups of 4 (~3V each, so 12V groups) and thus required its own power supply system. I decided on powering it with a LiPo battery that would be stepped up to 12V and charged via USB-C. There were two main issues I found with this design though—inefficiencies inherent within the step-up system and the large amount of heat that would be produced by the LEDs. These led me to scrap the first design and come up with the design I ended up having manufactured.
+            </p>
+            <img src="led/media/images/Annotation 2020-09-08 135647.png" alt="Final LED board design." style="width:35%;display:block;margin:auto;">
+            <p>
+              The final design (above) was made to take 5V from a USB cable and run all 16 LEDs in parallel along with current-limiting resistors for each LED. There are vias connected to the ground plane (which isn’t shown) all around the board to aid with heat dissipation. Additionally, there are multiple pads to solder power wires to which can be used either for different wire orientation or even chaining up multiple boards in parallel for even more light. I had this design manufactured and within a few weeks, I had the boards and was able to solder the components on myself! You can see a picture of the fully assembled board (left) and a bare PCB with no components (right) below.
+            </p>
+            <img src="led/media/images/IMG_3874.jpg" alt="Final LED board design." style="width:50%;display:block;margin:auto;">
+            <p style="text-align:center;">08/2020</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <footer class="footer">
+        <p>© 2020 Jacob Roller. All rights reserved.</p>
+      </footer>
+  </body>
+</html>
