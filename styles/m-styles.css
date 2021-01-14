@@ -2,7 +2,9 @@ html, body {
   height: 100%; margin: 0; padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 body {
   height: 100%;
@@ -17,7 +19,8 @@ body {
   background-repeat: no-repeat;*/
 
   color: black;
-  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
 }
 
 hr {
@@ -62,6 +65,7 @@ hr {
   padding: 40px 20px;
   text-align: center;
   color: white;
+  font-family: 'PT Sans', sans-serif;
   background-image: url("/media/images/IMG_1397.jpg");
   background-position: 50% 0%;
   background-size: 100%;
